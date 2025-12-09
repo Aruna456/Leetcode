@@ -1,4 +1,4 @@
-
+/**
 ## Problem #1378: Replace Employee ID With The Unique Identifier.md
 **Difficulty:** Easy
 **Topic:**  Joins 
@@ -10,18 +10,12 @@ Given two tables
 
 **Display `unique_id`  and `name` of each user, if user does not have a uniqueID display `null`**
 
----
-
-### Approach / Thought Process:
 - We need all employees even they don't have unique_id => use LEFT JOIN
 - JOIN `Employees.id` with `EmployeeUNI.id`
 - SELECT `unique_id ` from  EmployeeUNI and `name` from Employees
 - If employee doesnot have unique_id LEFT JOIN would automatically return NULL.
+**/
 
----
-
-### Solution (SQL):
-```sql
 SELECT u.unique_id, e.name
 FROM Employees as e
 LEFT JOIN EmployeeUNI as u
