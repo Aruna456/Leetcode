@@ -1,4 +1,5 @@
-## Problem #1757: Recyclable and Low Fat Products
+/**
+  Problem #1757: Recyclable and Low Fat Products
 **Difficulty:** Easy
 **Topic:** Select 
 
@@ -10,17 +11,12 @@ Where low_fats and recyclable are ENUM :
 
 **We need to display `product_id` of products which has `low_fats` as well as `recyclable`**
 
----
-
-### Approach / Thought Process:
 - As we need to display => use `SELECT`
 - Filter for low_fats and recyclable => use `WHERE`
 - Both conditions should be *True* => use `AND`
 
----
+**/
 
-### Solution (SQL):
-```sql
 SELECT product_id
 FROM Products
 WHERE low_fats = 'Y' AND recyclable = 'Y';
