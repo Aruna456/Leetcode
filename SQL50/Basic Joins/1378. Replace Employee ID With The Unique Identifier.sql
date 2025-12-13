@@ -1,14 +1,10 @@
 /**
-## Problem #1378: Replace Employee ID With The Unique Identifier.md
-**Difficulty:** Easy
-**Topic:**  Joins 
-
-**Problem Description:**  
+Problem Description:  
 Given two tables
 1. `Employees` with columns - `id`, `name `
 2. `EmployeeUNI` with columns -  `id`,`unique_id`
 
-**Display `unique_id`  and `name` of each user, if user does not have a uniqueID display `null`**
+- Display `unique_id`  and `name` of each user, if user does not have a uniqueID display `null`
 
 - We need all employees even they don't have unique_id => use LEFT JOIN
 - JOIN `Employees.id` with `EmployeeUNI.id`
