@@ -2,7 +2,7 @@
 APPROACH:
 - Given 2 tables Sales and Products
 - Q: Write a solution to report the product_name, year, and price for each sale_id in the Sales table.
-- They have mentioned " for each sales_id in sales table", means only if the sale_id has matching row in Products it's name should be displayed.
+- Only if the product is saled it will be present in sales table, so matching with product_id. 
 - User Inner JOIN to DISPLAY ONLY MATCHED ROWS
 **/
 
