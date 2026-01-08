@@ -8,6 +8,7 @@
 You are standing at two positions in an array and you are allowed to move only one step at a time.
 Each move must eliminate some wrong possibilities.
 
-## ORDER
+## One condition that makes TWO Pointers work - ORDER
 
-- Sorted array/ A direction (left->right)/ Sometimes that grows/shrinks predictably.
+- Sorted array/ A direction (left->right)/ Sometimes that grows/shrinks predictably
+- If there is no order, Two pointers usually doesn't work.
